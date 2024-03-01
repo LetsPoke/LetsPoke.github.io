@@ -3,11 +3,55 @@
     <head>
         <meta charset="UTF-8" />
         <title>My Portfolio</title>
+        <link rel="stylesheet" href="Portfolio_Page/styles.css" />
+        <script src="Portfolio_Page/index.js"></script>
     </head>
 
-    <body>
-        <div>
-            <p>Hi</p>
+    <body data-theme="light">
+        <div id="content-en" class="language" style="display: block">
+            <!-- English content goes here -->
+            <header class="header">
+                <div class="header-navbar">
+                    <button onclick="switchLanguage('en')">English</button>
+                    <button onclick="switchLanguage('de')">Deutsch</button>
+                    <a href="#" class="navbar-item">About Me</a>
+                </div>
+                <div class="header-content">
+                    <h1>Marcel Kühnau</h1>
+                    <p>
+                        Aspiring Full Stack Developer with a keen interest in
+                        backend development and a growing passion for
+                        data-related projects.
+                    </p>
+                    <a href="#" class="btn btn-xl"
+                        >LinkedIn
+                        <i class="fas fa-chevron-right btn-icon"></i>
+                    </a>
+                </div>
+            </header>
+        </div>
+
+        <div id="content-de" class="language" style="display: none">
+            <!-- German content goes here -->
+            <header class="header">
+                <div class="header-navbar">
+                    <button onclick="switchLanguage('en')">English</button>
+                    <button onclick="switchLanguage('de')">Deutsch</button>
+                    <a href="#" class="navbar-item">Über Mich</a>
+                </div>
+                <div class="header-content">
+                    <h1>Marcel Kühnau</h1>
+                    <p>
+                        Angehender Full-Stack-Entwickler mit großem Interesse an
+                        der Backend-Entwicklung und einer wachsende Leidenschaft
+                        für Datenbezogene Projekte.
+                    </p>
+                    <a href="#" class="btn btn-xl"
+                        >LinkedIn
+                        <i class="fas fa-chevron-right btn-icon"></i>
+                    </a>
+                </div>
+            </header>
         </div>
     </body>
 </html>

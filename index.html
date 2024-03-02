@@ -11,11 +11,19 @@
         <div id="content-en" class="language" style="display: block">
             <!-- English content goes here -->
             <header class="header">
-                <div class="header-navbar">
-                    <button onclick="switchLanguage('en')">English</button>
-                    <button onclick="switchLanguage('de')">Deutsch</button>
-                    <a href="#" class="navbar-item">About Me</a>
-                </div>
+                <nav class="header-navbar">
+                    <div class="language-switch">
+                        <a onclick="switchLanguage('en')">EN</a>
+                        <a onclick="switchLanguage('de')">DE</a>
+                    </div>
+                    <div class="header-nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+
                 <div class="header-content">
                     <h1>Marcel Kühnau</h1>
                     <p>
@@ -34,11 +42,18 @@
         <div id="content-de" class="language" style="display: none">
             <!-- German content goes here -->
             <header class="header">
-                <div class="header-navbar">
-                    <button onclick="switchLanguage('en')">English</button>
-                    <button onclick="switchLanguage('de')">Deutsch</button>
-                    <a href="#" class="navbar-item">Über Mich</a>
-                </div>
+                <nav class="header-navbar">
+                    <div class="language-switch">
+                        <a onclick="switchLanguage('en')">EN</a>
+                        <a onclick="switchLanguage('de')">DE</a>
+                    </div>
+                    <div class="header-nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
                 <div class="header-content">
                     <h1>Marcel Kühnau</h1>
                     <p>

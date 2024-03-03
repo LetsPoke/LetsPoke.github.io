@@ -1,3 +1,14 @@
+:root {
+    --cambridge-blue: #81a193;
+    --dark-slays-gray: #1f3f39;
+    --midnight-green: #073440;
+    --rich-black: #061b1d;
+    --moss-green: #999f60;
+    --reseda-green: #647d4c;
+    --parchment: #f7edd4;
+    --dutch-white: #e5dcb8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +48,7 @@ img {
 
 .header {
     width: 100%;
-    height: 93vh;
+    min-height: 93vh;
     position: relative;
     background: url('images/background_1.webp') no-repeat center center/cover;
 }
@@ -161,4 +172,43 @@ img {
     font-size: 2rem;
     transition: 0.3s;
     text-shadow: 0 0 4px #000000;
+}
+
+.header-socials a:hover {
+    opacity: 55%;
+}
+
+.about {
+    border-top: 10px solid var(--dark-slays-gray);
+    background: #141414;
+}
+
+.about-container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    font-weight: 350;
+    font-size: 2.53rem;
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+.about p {
+    font-weight: 350;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.about img {
+    max-width: 75%;
+    padding: 1rem 0;
+    margin: 0 auto;
 }
